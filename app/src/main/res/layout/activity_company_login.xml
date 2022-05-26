@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CompanyLogin">
+
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Sign in"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/signup"
+        android:textColor="#2952C8"
+        android:textSize="16sp"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_rectangle_login"
+        android:elevation="4dp">
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/BusinesEmail"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:hint="@string/BusinesEmail"
+            android:padding="6dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="4dp"
+            android:text="@string/Password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_text"
+            android:layout_marginLeft="6dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/black"
+            android:textSize="14sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgot_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/ic_rectangle_loginbtn"
+            android:text="@string/Login"
+            android:textAllCaps="false"
+            android:textSize="16sp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/wajua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Or"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wajua"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/SignAsComp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

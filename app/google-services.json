@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "43673563569",
+    "project_id": "recuitmentapp",
+    "storage_bucket": "recuitmentapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43673563569:android:5e552acac7d76d97238d90",
+        "android_client_info": {
+          "package_name": "com.example.recuirtmentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43673563569-n5ao5futace892ne9349m02s6kn3qi43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTAUNtsLXivhLzkRMYIU8R-q648VMtpaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43673563569-n5ao5futace892ne9349m02s6kn3qi43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

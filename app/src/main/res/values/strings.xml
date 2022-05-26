@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RecuirtmentApp</string>
+    <string name="email">Email Address</string>
+    <string name="BusinesEmail">Busines Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="fullname">Full Name</string>
+    <string name="SignAsComp">Sign in As Company</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="CompanyName">Company Name</string>
+    <string name="PhoneNumber">Business Phonenumber</string>
+    <string name="Addjob">Job Success added</string>
+    <string name="error">%1$s </string>
+</resources>

@@ -12,4 +12,6 @@
     <string name="PhoneNumber">Business Phonenumber</string>
     <string name="Addjob">Job Success added</string>
     <string name="error">%1$s </string>
+    <string name="JobTitle">Job Title</string>
+    <string name="Search">Search Job</string>
 </resources>

@@ -1,7 +1,11 @@
 package com.example.recuirtmentapp.model
 
-import com.google.firebase.database.Exclude
 
+import android.os.Parcelable
+import com.google.firebase.database.Exclude
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Job(
     @get: Exclude
     var id: String? = null,
@@ -15,6 +19,4 @@ data class Job(
     var location: String?= null,
     var salary: String?= null,
     var jobType: String?= null
-){
-
-}
+): Parcelable

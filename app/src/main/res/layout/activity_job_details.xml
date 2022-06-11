@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".AddJob">
+    tools:context=".JobDetails">
 
 
     <RelativeLayout
@@ -55,7 +55,7 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/jobtitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                     android:textColorHint="@android:color/black"
                     android:textSize="16sp">
 
-                </EditText>
+                </TextView>
                 <TextView
                     android:id="@+id/tv_company"
                     android:layout_width="wrap_content"
@@ -84,21 +84,21 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/company"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_company"
-                    android:hint=" @string/CompanyName"
-                    android:textColorHint="@android:color/black"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/ic_rectangle_loginbtn"
                     android:layout_marginLeft="6dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginRight="6dp"
-                    android:layout_marginTop="8dp">
+                    android:background="@drawable/ic_rectangle_loginbtn"
+                    android:hint=" @string/CompanyName"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp">
 
-                </EditText>
+                </TextView>
                 <TextView
                     android:id="@+id/tv_jobCategory"
                     android:layout_width="wrap_content"
@@ -113,26 +113,13 @@
 
                 </TextView>
 
-                <Spinner
-                    android:id="@+id/sp_category"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_jobCategory"
-                    android:background="@color/black"
-                    android:textSize="16sp"
-                    android:spinnerMode="dialog"
-                    android:textColor="@android:color/black"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginTop="8dp">
 
-                </Spinner>
 
                 <TextView
                     android:id="@+id/category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/sp_category"
+                    android:layout_below="@+id/tv_jobCategory"
                     android:textColorHint="@android:color/black"
                     android:textSize="16sp"
                     android:visibility="gone"
@@ -157,21 +144,21 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/jobdescription"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_below="@+id/tv_jobDesc"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/ic_rectangle_loginbtn"
                     android:hint=""
                     android:textColor="@android:color/black"
                     android:textColorHint="@android:color/black"
-                    android:textSize="16sp"
-                    android:background="@drawable/ic_rectangle_loginbtn"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginTop="8dp">
+                    android:textSize="16sp">
 
-                </EditText>
+                </TextView>
 
                 <TextView
                     android:id="@+id/tv_jobResp"
@@ -187,7 +174,7 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/jobResp"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -201,7 +188,7 @@
                     android:textColorHint="@android:color/black"
                     android:textSize="16sp">
 
-                </EditText>
+                </TextView>
 
 
                 <TextView
@@ -218,12 +205,12 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/skills"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_skills"
-                    android:hint="  Required Skills"
+                    android:hint= "Required Skills"
                     android:textColor="@android:color/black"
                     android:textColorHint="@android:color/black"
                     android:textSize="16sp"
@@ -232,7 +219,7 @@
                     android:layout_marginRight="6dp"
                     android:layout_marginTop="8dp">
 
-                </EditText>
+                </TextView>
 
                 <TextView
                     android:id="@+id/tv_education"
@@ -248,7 +235,7 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/education"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -256,13 +243,13 @@
                     android:hint= "Education"
                     android:textColor="@android:color/black"
                     android:textColorHint="@android:color/black"
-                    android:textSize= "16sp"
+                    android:textSize="16sp"
                     android:background="@drawable/ic_rectangle_loginbtn"
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     android:layout_marginTop="8dp">
 
-                </EditText>
+                </TextView>
 
                 <TextView
                     android:id="@+id/tv_location"
@@ -278,12 +265,12 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/joblocation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_location"
-                    android:hint="  Location"
+                    android:hint= "Location"
                     android:textColor="@android:color/black"
                     android:textColorHint="@android:color/black"
                     android:textSize="16sp"
@@ -292,7 +279,7 @@
                     android:layout_marginRight="6dp"
                     android:layout_marginTop="8dp">
 
-                </EditText>
+                </TextView>
                 <TextView
                     android:id="@+id/tv_salary"
                     android:layout_width="wrap_content"
@@ -307,7 +294,7 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/salary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -321,7 +308,7 @@
                     android:layout_marginRight="6dp"
                     android:layout_marginTop="8dp">
 
-                </EditText>
+                </TextView>
 
                 <TextView
                     android:id="@+id/tv_jobtype"
@@ -337,7 +324,7 @@
 
                 </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/jobtype"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -351,7 +338,7 @@
                     android:layout_marginRight="6dp"
                     android:layout_marginTop="8dp">
 
-                </EditText>
+                </TextView>
 
 
 
@@ -372,7 +359,7 @@
                 </TextView>
 
                 <Button
-                    android:id="@+id/postjob"
+                    android:id="@+id/ApplyJob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_aggrement"
@@ -381,7 +368,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/ic_rectangle_loginbtn"
-                    android:text="Post Job"
+                    android:text="Apply Job"
                     android:textAllCaps="false"
                     android:textSize="16sp">
 

@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_add_job.*
 
 class AddJob : AppCompatActivity() {
     lateinit var binding: ActivityAddJobBinding
-    lateinit var ref: DatabaseReference
+
     lateinit var viewModel: JobViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ class AddJob : AppCompatActivity() {
 
         })
 
-        ref = FirebaseDatabase.getInstance().getReference("JOB")
+
 
         binding.postjob.setOnClickListener {
             val title = binding.jobtitle.text.toString().trim()

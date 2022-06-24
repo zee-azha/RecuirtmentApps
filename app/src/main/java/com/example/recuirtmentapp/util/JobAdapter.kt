@@ -45,7 +45,7 @@ class JobAdapter: RecyclerView.Adapter<JobAdapter.ViewHolder>(){
             with(binding){
                 tvJobTitle.text = job.jobTitle
                 tvCompany.text = job.companyName
-                tvJobTitle.setOnClickListener{
+                cvJob.setOnClickListener{
                     onItemClickCallback?.onItemClicked(job)
                 }
             }

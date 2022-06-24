@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.recuirtmentapp.databinding.ActivityRegisterBinding
+import com.example.recuirtmentapp.util.NODE_USER
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -95,7 +96,7 @@ class register : AppCompatActivity() {
         progressDialog: ProgressDialog
     ) {
         val currentUserId = auth.currentUser!!.uid
-        ref = FirebaseDatabase.getInstance().reference.child("USERS")
+        ref = FirebaseDatabase.getInstance().reference.child(NODE_USER)
         val userMap = HashMap<String, Any>()
         userMap["id"] = currentUserId
         userMap["email"] = email

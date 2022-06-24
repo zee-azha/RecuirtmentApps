@@ -10,22 +10,29 @@
         android:layout_marginEnd="12dp"
         android:padding="12dp"
         >
-        <TextView
-            android:id="@+id/tv_jobTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:textSize="20sp"
-            android:text="@string/JobTitle"/>
 
-        <TextView
-            android:id="@+id/tv_company"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_jobTitle"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/CompanyName"
-            android:textSize="20sp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_jobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/JobTitle"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/CompanyName"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
 
 
     </RelativeLayout>

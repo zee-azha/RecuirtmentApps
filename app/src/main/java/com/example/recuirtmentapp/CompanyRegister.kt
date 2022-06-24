@@ -8,6 +8,7 @@ import android.util.Patterns
 import android.widget.Toast
 import com.example.recuirtmentapp.databinding.ActivityCompanyRegisterBinding
 import com.example.recuirtmentapp.databinding.ActivityRegisterBinding
+import com.example.recuirtmentapp.util.NODE_Comp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -112,7 +113,7 @@ class CompanyRegister : AppCompatActivity() {
         progressDialog: ProgressDialog
     ) {
         val currentUserId = auth.currentUser!!.uid
-        ref = FirebaseDatabase.getInstance().reference.child("COMPANY")
+        ref = FirebaseDatabase.getInstance().reference.child(NODE_Comp)
         val userMap = HashMap<String, Any>()
         userMap["id"] = currentUserId
         userMap["email"] = email

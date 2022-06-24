@@ -1,6 +1,7 @@
 package com.example.recuirtmentapp
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -20,6 +21,9 @@ class JobDetails : AppCompatActivity() {
         binding = ActivityJobDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
         val job = intent.getParcelableExtra<Job>(EXTRA_JOB) as Job
         val jobId = job.id
         var jobTitle = job.jobTitle
@@ -33,11 +37,12 @@ class JobDetails : AppCompatActivity() {
         var jobLocation = job.location
         var jobType = job.jobType
 
+
         val bundle = Bundle()
         bundle.putString(EXTRA_JOB, jobId)
 
         binding.apply {
-             jobtitle.text = jobTitle.toString()
+            jobtitle.text = jobTitle.toString()
             company.text = jobCompany.toString()
             category.text = jobCategory.toString()
             jobdescription.text = jobDescription.toString()
@@ -47,8 +52,14 @@ class JobDetails : AppCompatActivity() {
             joblocation.text = jobLocation.toString()
             salary.text = jobSalary.toString()
             jobtype.text = jobType.toString()
-            Log.v(TAG,"job id" + jobId)
 
+
+        }
+        binding.ApplyJob.setOnClickListener {
+            val intentWithExtraData = Intent(this@JobDetails,JobApplication::class.java)
+            intentWithExtraData.putExtra("JobId", jobId.toString())
+            Log.d(TAG,"jobid: $jobId")
+            startActivity(intentWithExtraData)
         }
     }
 

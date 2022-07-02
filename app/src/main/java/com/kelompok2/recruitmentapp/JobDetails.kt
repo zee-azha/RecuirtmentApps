@@ -1,13 +1,12 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
 import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.recuirtmentapp.databinding.ActivityJobDetailsBinding
-import com.example.recuirtmentapp.model.Job
-import kotlin.math.log
+import com.kelompok2.recruitmentapp.databinding.ActivityJobDetailsBinding
+import com.kelompok2.recruitmentapp.model.Job
 
 class JobDetails : AppCompatActivity() {
 

@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "43673563569",
-    "project_id": "recuitmentapp",
-    "storage_bucket": "recuitmentapp.appspot.com"
+    "project_number": "634889878179",
+    "firebase_url": "https://matkul-aplikasi-mobile-default-rtdb.firebaseio.com",
+    "project_id": "matkul-aplikasi-mobile",
+    "storage_bucket": "matkul-aplikasi-mobile.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:43673563569:android:5e552acac7d76d97238d90",
+        "mobilesdk_app_id": "1:634889878179:android:0ad97886422d1f54615d16",
         "android_client_info": {
-          "package_name": "com.example.recuirtmentapp"
+          "package_name": "com.kelompok2.recruitmentapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "43673563569-n5ao5futace892ne9349m02s6kn3qi43.apps.googleusercontent.com",
+          "client_id": "634889878179-hvte2jo1sgc1f3vbh9t8148fhf5jbbsc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCTAUNtsLXivhLzkRMYIU8R-q648VMtpaY"
+          "current_key": "AIzaSyCWaQdjx7UOQUcaTvgoySAC3GRrPmd_c6A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "43673563569-n5ao5futace892ne9349m02s6kn3qi43.apps.googleusercontent.com",
+              "client_id": "634889878179-hvte2jo1sgc1f3vbh9t8148fhf5jbbsc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

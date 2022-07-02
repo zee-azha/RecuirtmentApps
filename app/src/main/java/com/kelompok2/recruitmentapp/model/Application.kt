@@ -1,4 +1,4 @@
-package com.example.recuirtmentapp.model
+package com.kelompok2.recruitmentapp.model
 
 import android.os.Parcelable
 import com.google.firebase.database.Exclude

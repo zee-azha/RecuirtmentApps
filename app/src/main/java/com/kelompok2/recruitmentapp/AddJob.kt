@@ -1,36 +1,30 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
-import android.app.ProgressDialog
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import android.widget.Toast
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
-import com.example.recuirtmentapp.databinding.ActivityAddJobBinding
-import com.example.recuirtmentapp.model.Job
+import com.kelompok2.recruitmentapp.databinding.ActivityAddJobBinding
+import com.kelompok2.recruitmentapp.model.Job
 
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_add_job.*
 
 class AddJob : AppCompatActivity() {
     lateinit var binding: ActivityAddJobBinding
 
-    lateinit var viewModel: JobViewModel
+    lateinit var viewModel: com.kelompok2.recruitmentapp.JobViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddJobBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel = ViewModelProviders.of(this).get(JobViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(com.kelompok2.recruitmentapp.JobViewModel::class.java)
         viewModel.result.observe(this,{
             val message = if(it == null){
-                getString(R.string.Addjob)
+                getString(com.kelompok2.recruitmentapp.R.string.Addjob)
             }else{
-                getString(R.string.error,it.message)
+                getString(com.kelompok2.recruitmentapp.R.string.error,it.message)
             }
             Toast.makeText(applicationContext,message, Toast.LENGTH_SHORT).show()
 

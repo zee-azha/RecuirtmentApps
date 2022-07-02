@@ -1,22 +1,19 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
-import android.Manifest
 import android.app.Activity.RESULT_OK
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
-import com.example.recuirtmentapp.databinding.FragmentApplyJobBinding
+import com.kelompok2.recruitmentapp.databinding.FragmentApplyJobBinding
 
 import android.content.Intent
 import android.net.Uri
 import android.util.Log
 import android.widget.Toast
-import com.example.recuirtmentapp.model.Application
-import com.example.recuirtmentapp.model.Job
+import com.kelompok2.recruitmentapp.model.Application
 
 
 import kotlinx.android.synthetic.main.fragment_apply_job.*

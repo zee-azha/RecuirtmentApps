@@ -1,4 +1,4 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.recuirtmentapp.databinding.FragmentDisplayJobBinding
-import com.example.recuirtmentapp.model.Job
-import com.example.recuirtmentapp.util.JobAdapter
+import com.kelompok2.recruitmentapp.databinding.FragmentDisplayJobBinding
+import com.kelompok2.recruitmentapp.model.Job
+import com.kelompok2.recruitmentapp.util.JobAdapter
 
 
 class DisplayJob : Fragment() {

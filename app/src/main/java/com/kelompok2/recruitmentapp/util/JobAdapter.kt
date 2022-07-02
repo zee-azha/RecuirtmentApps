@@ -1,10 +1,10 @@
-package com.example.recuirtmentapp.util
+package com.kelompok2.recruitmentapp.util
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recuirtmentapp.databinding.RecylerViewJobBinding
-import com.example.recuirtmentapp.model.Job
+import com.kelompok2.recruitmentapp.databinding.RecylerViewJobBinding
+import com.kelompok2.recruitmentapp.model.Job
 
 
 class JobAdapter: RecyclerView.Adapter<JobAdapter.ViewHolder>(){

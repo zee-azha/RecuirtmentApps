@@ -1,4 +1,4 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
 
 import android.content.Intent
@@ -8,8 +8,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
-import com.example.recuirtmentapp.databinding.ActivityJobApplicationBinding
-import com.example.recuirtmentapp.model.Application
+import com.kelompok2.recruitmentapp.databinding.ActivityJobApplicationBinding
+import com.kelompok2.recruitmentapp.model.Application
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.fragment_apply_job.*
 import java.text.SimpleDateFormat

@@ -1,4 +1,4 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
 import org.junit.Test
 

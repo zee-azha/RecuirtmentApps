@@ -1,4 +1,4 @@
-package com.example.recuirtmentapp.model
+package com.kelompok2.recruitmentapp.model
 
 data class Company(
     val id: String,

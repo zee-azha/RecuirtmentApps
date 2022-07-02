@@ -1,20 +1,22 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import com.example.recuirtmentapp.databinding.ActivityCompanyLoginBinding
-import com.example.recuirtmentapp.databinding.ActivityLoginBinding
-import com.google.firebase.auth.FirebaseAuth
+import com.kelompok2.recruitmentapp.databinding.ActivityLoginBinding
 
-class CompanyLogin : AppCompatActivity() {
-    lateinit var binding : ActivityCompanyLoginBinding
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_register.*
+
+class Login : AppCompatActivity() {
+    lateinit var binding : ActivityLoginBinding
     private lateinit var auth : FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCompanyLoginBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
@@ -41,9 +43,13 @@ class CompanyLogin : AppCompatActivity() {
 
             loginUser(email,password)
         }
+        binding.Company.setOnClickListener{
+            val intent = Intent(this@Login, CompanyLogin::class.java)
+            startActivity(intent)
+        }
 
-        binding.signup.setOnClickListener {
-            val intent = Intent(this@CompanyLogin, CompanyRegister::class.java)
+        binding.tvSignup.setOnClickListener {
+            val intent = Intent(this@Login, register::class.java)
             startActivity(intent)
         }
     }
@@ -51,20 +57,20 @@ class CompanyLogin : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){
                 if (it.isSuccessful){
-                    Intent(this@CompanyLogin, AddJob::class.java).also { intent->
+                    Intent(this@Login, MainActivity::class.java).also { intent->
                         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                     }
                 }
                 else{
-                    Toast.makeText(this,"${it.exception?.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"${it.exception?.message}",Toast.LENGTH_SHORT).show()
                 }
             }
     }
     override fun onStart() {
         super.onStart()
         if (auth.currentUser != null){
-            val intent = Intent(this@CompanyLogin, MainActivity::class.java)
+            val intent = Intent(this@Login, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }

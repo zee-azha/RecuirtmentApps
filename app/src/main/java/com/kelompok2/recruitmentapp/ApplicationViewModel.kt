@@ -1,11 +1,11 @@
-package com.example.recuirtmentapp
+package com.kelompok2.recruitmentapp
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.recuirtmentapp.model.Application
+import com.kelompok2.recruitmentapp.model.Application
 
-import com.example.recuirtmentapp.util.NODE_Apply
+import com.kelompok2.recruitmentapp.util.NODE_Apply
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

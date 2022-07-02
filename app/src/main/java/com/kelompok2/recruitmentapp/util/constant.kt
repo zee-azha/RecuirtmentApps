@@ -1,4 +1,4 @@
-package com.example.recuirtmentapp.util
+package com.kelompok2.recruitmentapp.util
 
 const val NODE_JOB = "JOBS"
 const val NODE_USER = "USER"

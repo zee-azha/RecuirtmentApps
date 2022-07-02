@@ -31,8 +31,6 @@ class MainActivity : AppCompatActivity() {
         moveToFragment(DisplayJob())
 
 
-
-
     }
 
 
